@@ -1,0 +1,211 @@
+.wrap {
+  justify-content: center;
+  gap: 20px;
+  max-width: 2048px;
+  text-align: center;
+  padding: 8vh 0;
+}
+.uploadBtn {
+  grid-area: main;
+}
+.custom-file-upload {
+  grid-area: header;
+}
+.rationDown {
+  grid-area: middle;
+  display: flex;
+  flex-direction: column;
+}
+.audioPreview {
+  grid-area: footer;
+}
+
+.compressComp {
+  flex: 1 1 700px;
+  padding: 20px;
+  width: auto;
+}
+
+.wrapFileSelect {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.fileToCompress {
+  width: 400px;
+  height: 230px;
+  justify-content: center;
+  background-color: #dfa05d;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "select select select select"
+    "main main main main"
+    "middle middle middle middle "
+    "footer footer footer footer";
+}
+
+.compRat {
+  width: 300px;
+}
+
+.tableComp {
+  flex: 1 1 700px;
+  padding: 20px;
+  overflow-x: auto;
+  max-width: 1350px;
+  width: auto;
+}
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+
+  padding: 20px 0;
+}
+.title1 {
+  font-size: 1.8rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: black;
+  border-radius: 10px;
+  background-color: #658761;
+  padding: 10px 0;
+}
+.title2 {
+  font-size: 1.5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+}
+.addComponent {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: black;
+  margin-bottom: 20px;
+}
+.title3 {
+  font-size: 1.8rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: black;
+  border-radius: 10px;
+  background-color: #658761;
+  padding: 10px 0;
+}
+
+select {
+  font-size: 1rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #272b4f;
+  width: 100%;
+}
+
+.bitRate {
+  width: 350px;
+  grid-area: select;
+}
+
+input {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: black;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  padding: 0.5em;
+  font-size: 1rem;
+  border: thin solid grey;
+  border-radius: 3px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+input[type="file"]::file-selector-button:hover {
+  background-color: rgb(196, 191, 191);
+  border: 1px solid black;
+}
+.upl {
+  width: 100px;
+}
+button {
+  font-weight: bold;
+  color: #000000;
+  padding: 0.5em;
+  font-size: 1rem;
+  border: thin solid grey;
+  border-radius: 3px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 100px;
+}
+button:hover {
+  background-color: rgb(196, 191, 191);
+  border: 1px solid #000000;
+}
+.uploadBtn {
+  margin-top: 35px;
+}
+
+.audioPreview {
+  margin-left: 80px;
+  width: 100px;
+}
+
+.ratio p {
+  font-size: 22px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 450px;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ac5045;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  background-color: white;
+}
+tr:nth-child(even) {
+  background-color: #c88881;
+}
+th {
+  background-color: #ac5045;
+  color: white;
+}
+.records {
+  margin: 10px auto;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .compressComp {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .title1,
+  .title3 {
+    font-size: 2rem;
+  }
+  .title2 {
+    font-size: 1rem;
+  }
+
+  .uploadBtn {
+    margin-left: 0;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}

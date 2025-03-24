@@ -12,7 +12,6 @@ function App() {
           <Route path="/compress" element={<Compress />} />
         </Routes>
       </Router>
-      {/* <div className="footer">diplomski rad </div> */}
     </div>
   );
 }
